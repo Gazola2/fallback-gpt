@@ -1,0 +1,37 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - despedida
+  - consulta_tempo
+  - consulta_noticias
+  - consulta_horario
+  - consulta_localizacao
+  - agradecimento
+
+responses:
+  utter_saudacao:
+    - text: "Olá! Como posso ajudar?"
+
+  utter_despedida:
+    - text: "Até logo! Tenha um ótimo dia!"
+
+  utter_consulta_tempo:
+    - text: "A previsão do tempo para hoje é de sol com temperatura de 30°C."
+
+  utter_consulta_noticias :
+    - text: "Aqui estão algumas notícias recentes: \n
+            - Notícia 1"
+
+  utter_consulta_horario:
+    - text: "Agora são 14:30."
+      
+  utter_consulta_localizacao:
+    - text: "O restaurante mais próximo está localizado na Rua Principal, número 123."
+
+  utter_agradecimento:
+    - text: "De nada! Estou aqui para ajudar."
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

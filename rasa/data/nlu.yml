@@ -1,0 +1,61 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Olá
+    - Oi
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+
+- intent: despedida
+  examples: |
+    - Tchau
+    - Adeus
+    - Até logo
+    - Até mais
+
+- intent: consulta_tempo
+  examples: |
+    - Como está o tempo hoje?
+    - Qual a previsão do tempo para amanhã?
+    - Vai chover hoje?
+    - Como vai estar o clima na próxima semana?
+
+- intent: consulta_noticias
+  examples: |
+    - Me mostre as últimas notícias
+    - Quais são as notícias mais recentes?
+    - O que está acontecendo no mundo?
+
+- intent: consulta_horario
+  examples: |
+    - Que horas são?
+    - Qual o horário atual?
+    - Que horas abre o estabelecimento?
+
+- intent: consulta_localizacao
+  examples: |
+    - Onde fica o restaurante mais próximo?
+    - Como chegar ao shopping?
+    - Qual é o endereço do escritório?
+
+- intent: agradecimento
+  examples: |
+    - Obrigado
+    - Muito obrigado
+    - Agradeço sua ajuda
+    - Valeu
+
+- intent: out_of_scope
+  examples: |
+    - Não entendi o que você disse
+    - Desculpe, não entendi
+    - Não estou entendendo
+    - Pode repetir, por favor?
+    - Não estou seguindo
+    - Não estou acompanhando
+    - Não estou certo do contexto
+    - Estou confuso
+    - Não sei do que você está falando
