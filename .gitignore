@@ -16,3 +16,5 @@ IA_classification/.~lock.articles.csv
 rasa/models
 IA_classification/articles.csv
 rasa/.rasa
+rasa/actions/__pycache__
+/rasa/actions/__init__.py
