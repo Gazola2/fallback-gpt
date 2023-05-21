@@ -1,0 +1,17 @@
+# Ignorar arquivos de compilação
+*.o
+*.exe
+
+# Ignorar diretório de dependências
+/vendor/
+
+# Ignorar arquivos de configuração específicos
+config.ini
+
+## arquvivos n necessarios
+.rasa
+.venv
+.vscode
+.\IA_classification\.~lock.articles.csv#
+.\rasa\models
+.\IA_classification\articles.csv
