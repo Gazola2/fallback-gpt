@@ -12,6 +12,6 @@ config.ini
 .rasa
 .venv
 .vscode
-.\IA_classification\.~lock.articles.csv#
+.\IA_classification\.~lock.articles.csv
 .\rasa\models
 .\IA_classification\articles.csv
