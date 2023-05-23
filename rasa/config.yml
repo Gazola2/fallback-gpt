@@ -1,37 +1,43 @@
 recipe: default.v1
-assistant_id: example_bot
-language: en
-
+language: pt
 pipeline:
-# # No configuration for the NLU pipeline was provided. The following default pipeline was used to train your model.
-# # If you'd like to customize it, uncomment and adjust the pipeline.
-# # See https://rasa.com/docs/rasa/tuning-your-model for more information.
-#   - name: WhitespaceTokenizer
-#   - name: RegexFeaturizer
-#   - name: LexicalSyntacticFeaturizer
-#   - name: CountVectorsFeaturizer
-#   - name: CountVectorsFeaturizer
-#     analyzer: char_wb
-#     min_ngram: 1
-#     max_ngram: 4
-#   - name: DIETClassifier
-#     epochs: 100
-#   - name: EntitySynonymMapper
-#   - name: ResponseSelector
-#     epochs: 100
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+  case_sensitive: false
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: word
+  lowercase: true
+  strip_accents: unicode
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  lowercase: true
+  max_ngram: 5
+  min_ngram: 2
+  strip_accents: unicode
+- name: DIETClassifier
+  epochs: 100
+  tensorboard_log_directory: .tensorboard_diet
+  tensorboard_log_level: epoch
+- name: EntitySynonymMapper
 - name: FallbackClassifier
-  threshold: 0.7
   ambiguity_threshold: 0.1
-
+  threshold: 0.6
 policies:
-- name: MemoizationPolicy
 - name: TEDPolicy
-  max_history: 5
-  epochs: 10
+  batch_size:
+  - 32
+  - 64
+  epochs: 20
+  max_history: 10
+  tensorboard_log_directory: .tensorboard_ted
+  tensorboard_log_level: epoch
 - name: RulePolicy
-  # Confidence threshold for the `core_fallback_action_name` to apply.
-  # The action will apply if no other action was predicted with
-  # a confidence >= core_fallback_threshold
-  core_fallback_threshold: 0.4
-  core_fallback_action_name: "action_default_fallback"
-  enable_fallback_prediction: True
+  core_fallback_action_name: action_fallback
+  core_fallback_threshold: 0.5
+  enable_fallback_prediction: true
+- name: AugmentedMemoizationPolicy
+  max_history: 10
+  tensorboard_log_directory: .tensorboard_memo
+  tensorboard_log_level: epoch
+assistant_id: 20230522-200136-witty-burrito

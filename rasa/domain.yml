@@ -8,6 +8,10 @@ intents:
   - consulta_horario
   - consulta_localizacao
   - agradecimento
+  - out_of_scope
+
+actions:
+  - action_fallback
 
 responses:
   utter_saudacao:
@@ -31,6 +35,9 @@ responses:
 
   utter_agradecimento:
     - text: "De nada! Estou aqui para ajudar."
+  
+  utter_fallback:
+    - text: ""
 
 session_config:
   session_expiration_time: 60
