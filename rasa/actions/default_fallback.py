@@ -21,7 +21,7 @@ class ActionDefaultFallback(Action):
         tracker: Tracker,
         domain: Dict[Text, Any],
     ) -> List[Dict[Text, Any]]:
-        with open('../saved_models/model.pkl', 'rb') as f:
+        with open('../saved_models/model_lstm.pkl', 'rb') as f:
             model = pickle.load(f)
         with open('../saved_tokenizer/tokenizer.json', 'rb') as f:
             tokenizer = pickle.load(f)
