@@ -18,3 +18,5 @@ IA_classification/articles.csv
 rasa/.rasa
 rasa/actions/__pycache__
 /rasa/actions/__init__.py
+rasa/.tensorboard_diet/
+rasa/.tensorboard_ted/

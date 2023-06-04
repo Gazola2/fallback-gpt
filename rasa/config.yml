@@ -1,0 +1,43 @@
+recipe: default.v1
+language: pt
+pipeline:
+- name: WhitespaceTokenizer
+- name: RegexFeaturizer
+  case_sensitive: false
+- name: LexicalSyntacticFeaturizer
+- name: CountVectorsFeaturizer
+  analyzer: word
+  lowercase: true
+  strip_accents: unicode
+- name: CountVectorsFeaturizer
+  analyzer: char_wb
+  lowercase: true
+  max_ngram: 5
+  min_ngram: 2
+  strip_accents: unicode
+- name: DIETClassifier
+  epochs: 100
+  tensorboard_log_directory: .tensorboard_diet
+  tensorboard_log_level: epoch
+- name: EntitySynonymMapper
+- name: FallbackClassifier
+  ambiguity_threshold: 0.1
+  threshold: 0.6
+policies:
+- name: TEDPolicy
+  batch_size:
+  - 32
+  - 64
+  epochs: 20
+  max_history: 10
+  tensorboard_log_directory: .tensorboard_ted
+  tensorboard_log_level: epoch
+- name: RulePolicy
+  core_fallback_action_name: action_fallback
+  core_fallback_threshold: 0.5
+  enable_fallback_prediction: true
+- name: AugmentedMemoizationPolicy
+  max_history: 10
+  tensorboard_log_directory: .tensorboard_memo
+  tensorboard_log_level: epoch
+assistant_id: 20230522-200136-witty-burrito
