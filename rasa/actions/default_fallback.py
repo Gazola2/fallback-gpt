@@ -6,6 +6,7 @@ from rasa_sdk.executor import CollectingDispatcher
 
 import pickle
 import numpy as np
+from connection import get_chatgpt_response
 from tensorflow.keras.preprocessing.sequence import pad_sequences
 
 class ActionDefaultFallback(Action):
@@ -43,7 +44,8 @@ class ActionDefaultFallback(Action):
 
         # Obter a classe predita
         classe_predita = label_classes[np.argmax(predicao)]
-
+        response = get_chatgpt_response(frase)
+        print(response)
         print('Frase:', frase)
         print('Classe predita:', classe_predita)
         
