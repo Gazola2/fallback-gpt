@@ -1,4 +1,4 @@
-from connection import get_database
+from actions.connection import get_database
 
 
 def find_examples():
