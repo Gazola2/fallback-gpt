@@ -1,0 +1,65 @@
+version: "3.1"
+
+stories:
+- story: saudacao
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- story: despedida
+  steps:
+  - intent: despedida
+  - action: utter_despedida
+
+- story: consulta_tempo
+  steps:
+  - intent: consulta_tempo
+  - action: utter_consulta_tempo
+
+- story: consulta_noticias
+  steps:
+  - intent: consulta_noticias
+  - action: utter_consulta_noticias
+
+- story: consulta_horario
+  steps:
+  - intent: consulta_horario
+  - action: utter_consulta_horario
+
+- story: consulta_localizacao
+  steps:
+  - intent: consulta_localizacao
+  - action: utter_consulta_localizacao
+
+- story: agradecimento
+  steps:
+  - intent: agradecimento
+  - action: utter_agradecimento
+
+- story: saudacao e despedida
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+  - intent: despedida
+  - action: utter_despedida
+
+- story: consulta_tempo e despedida
+  steps:
+  - intent: consulta_tempo
+  - action: utter_consulta_tempo
+  - intent: despedida
+  - action: utter_despedida
+
+- story: consulta_noticias e agradecimento
+  steps:
+  - intent: consulta_noticias
+  - action: utter_consulta_noticias
+  - intent: agradecimento
+  - action: utter_agradecimento
+
+- story: Fallback customizado
+  steps:
+    - or:
+        - intent: out_of_scope
+        - intent: nlu_fallback
+    - action: action_fallback

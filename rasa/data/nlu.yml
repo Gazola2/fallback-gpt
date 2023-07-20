@@ -1,0 +1,37 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+    - Olá
+    - Oi
+    - Bom dia
+    - Boa tarde
+    - Boa noite
+
+- intent: despedida
+  examples: |
+    - Tchau
+    - Adeus
+    - Até logo
+    - Até mais
+
+- intent: agradecimento
+  examples: |
+    - Obrigado
+    - Muito obrigado
+    - Agradeço sua ajuda
+    - Valeu
+
+- intent: out_of_scope
+  examples: |
+    - Não entendi o que você disse
+    - Desculpe, não entendi
+    - Não estou entendendo
+    - Pode repetir, por favor?
+    - Não estou seguindo
+    - Não estou acompanhando
+    - Não estou certo do contexto
+    - Estou confuso
+    - Não sei do que você está falando
+    - Lula diz que está 'lascado', mas que ainda tem força como cabo eleitoral

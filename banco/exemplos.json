@@ -1,0 +1,92 @@
+[
+  {
+    "categoria": "poder",
+    "titulo": "Presidente assina novo decreto para fortalecer a economia nacional",
+    "conteudo": "O presidente anunciou a assinatura de um novo decreto com medidas para fortalecer a economia nacional e impulsionar o desenvolvimento do país."
+  },
+  {
+    "categoria": "poder",
+    "titulo": "Parlamentares discutem projeto de lei sobre reforma política",
+    "conteudo": "No Congresso Nacional, parlamentares estão discutindo um projeto de lei que propõe mudanças no sistema político e eleitoral do país."
+  },
+  {
+    "categoria": "colunas",
+    "titulo": "Opinião: Reflexões sobre os desafios da sociedade contemporânea",
+    "conteudo": "Neste artigo, o autor faz reflexões sobre os desafios enfrentados pela sociedade contemporânea e propõe possíveis soluções para os problemas atuais."
+  },
+  {
+    "categoria": "colunas",
+    "titulo": "Colunista comenta sobre os avanços tecnológicos e seu impacto na vida moderna",
+    "conteudo": "Em sua coluna, o colunista aborda os avanços tecnológicos recentes e discute o impacto dessas inovações na vida das pessoas."
+  },
+  {
+    "categoria": "mercado",
+    "titulo": "Bolsa de Valores registra alta recorde no fechamento do pregão",
+    "conteudo": "A Bolsa de Valores encerrou o pregão de hoje com uma alta recorde, impulsionada pela valorização de diversas empresas listadas."
+  },
+  {
+    "categoria": "mercado",
+    "titulo": "Especialistas discutem as perspectivas do mercado financeiro para o próximo trimestre",
+    "conteudo": "Em um evento especializado, especialistas debatem as perspectivas do mercado financeiro e apresentam projeções para o próximo trimestre."
+  },
+  {
+    "categoria": "esporte",
+    "titulo": "Time de futebol conquista título inédito no campeonato nacional",
+    "conteudo": "Após uma campanha brilhante, o time de futebol sagrou-se campeão do campeonato nacional, conquistando um título inédito para a equipe."
+  },
+  {
+    "categoria": "esporte",
+    "titulo": "Atleta brasileiro conquista medalha de ouro em competição internacional",
+    "conteudo": "Um atleta brasileiro brilhou em uma competição internacional e conquistou a medalha de ouro, levando o nome do país ao topo do pódio."
+  },
+  {
+    "categoria": "mundo",
+    "titulo": "Conflito diplomático entre nações vizinhas preocupa a comunidade internacional",
+    "conteudo": "Uma tensão crescente entre nações vizinhas tem gerado preocupações na comunidade internacional, que busca soluções diplomáticas para evitar um conflito armado."
+  },
+  {
+    "categoria": "mundo",
+    "titulo": "Organização internacional lança campanha para combater a fome em países em desenvolvimento",
+    "conteudo": "Uma renomada organização internacional lançou uma campanha global para combater a fome e promover a segurança alimentar em países em desenvolvimento."
+  },
+  {
+    "categoria": "equilibrioesaude",
+    "titulo": "Especialistas discutem os benefícios da prática regular de exercícios físicos",
+    "conteudo": "Especialistas em saúde ressaltam os benefícios da prática regular de exercícios físicos para a manutenção da saúde e o bem-estar geral."
+  },
+  {
+    "categoria": "equilibrioesaude",
+    "titulo": "Novos estudos revelam os impactos da alimentação na saúde mental",
+    "conteudo": "Pesquisas recentes têm demonstrado a relação entre a alimentação e a saúde mental, destacando a importância de uma dieta equilibrada para o bem-estar psicológico."
+  },
+  {
+    "categoria": "cotidiano",
+    "titulo": "Aplicativo de mobilidade urbana amplia sua atuação para mais cidades",
+    "conteudo": "Um conhecido aplicativo de mobilidade urbana anunciou a expansão de seus serviços para mais cidades, facilitando o deslocamento dos usuários."
+  },
+  {
+    "categoria": "cotidiano",
+    "titulo": "Nova tecnologia promete revolucionar o mercado de eletrodomésticos",
+    "conteudo": "Uma nova tecnologia disruptiva promete revolucionar o mercado de eletrodomésticos, oferecendo produtos mais eficientes, econômicos e sustentáveis."
+  },
+  {
+    "categoria": "ilustrada",
+    "titulo": "Nova exposição de arte contemporânea abre suas portas ao público",
+    "conteudo": "Uma nova exposição de arte contemporânea foi inaugurada, apresentando obras de renomados artistas e promovendo a apreciação cultural na região."
+  },
+  {
+    "categoria": "ilustrada",
+    "titulo": "Filme nacional ganha destaque em festival internacional de cinema",
+    "conteudo": "Um filme brasileiro ganhou destaque em um prestigiado festival internacional de cinema, recebendo elogios da crítica e conquistando prêmios importantes."
+  },
+  {
+    "categoria": "ambiente",
+    "titulo": "Projeto ambiental busca preservar áreas de grande biodiversidade",
+    "conteudo": "Um projeto ambiental inovador está em andamento, visando preservar áreas de grande biodiversidade e promover a conservação dos ecossistemas naturais."
+  },
+  {
+    "categoria": "ambiente",
+    "titulo": "Estudo aponta impactos negativos da poluição do ar na saúde da população",
+    "conteudo": "Um estudo revelou os impactos negativos da poluição do ar na saúde da população, ressaltando a importância de políticas públicas para combater esse problema."
+  }
+]
